@@ -1,2 +1,2 @@
 # PSC_BUA
-Danilo de Souza Miguel
+Vítor Kenzo Kuwabara
