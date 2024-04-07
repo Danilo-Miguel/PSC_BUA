@@ -1,5 +1,5 @@
 
-package estruturaDeSelecao;
+package estruturaDeSelecaoIf;
 
 import javax.swing.JOptionPane;
 
