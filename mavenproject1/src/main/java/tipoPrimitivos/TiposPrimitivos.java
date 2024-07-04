@@ -14,7 +14,7 @@ public class TiposPrimitivos {
         double altura = 1.75;
         float temperatura = 28.5f;
         boolean ehEstudante = true;
-        char genero = 'M';
+        char letra = 'a';
         byte idadeByte = 25;
         short populacao = 15000;
         long populacaoMundial = 7800000000L;
@@ -23,7 +23,7 @@ public class TiposPrimitivos {
         System.out.println("Altura: " + altura);
         System.out.println("Temperatura: " + temperatura);
         System.out.println("É estudante? " + ehEstudante);
-        System.out.println("Gênero: " + genero);
+        System.out.println("Gênero: " + letra);
         System.out.println("Idade (byte): " + idadeByte);
         System.out.println("População: " + populacao);
         System.out.println("População mundial: " + populacaoMundial);

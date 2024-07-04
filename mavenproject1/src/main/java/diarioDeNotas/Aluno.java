@@ -1,31 +1,88 @@
-
 package diarioDeNotas;
 
-import static diarioDeNotas.DiarioDeNotas.nomeAluno;
 import javax.swing.JOptionPane;
 
+public class Aluno extends Usuario {
 
-public class Aluno {
-    
-   private String nome;
-   protected int idade;
-    String curso;
-    String campus;
-    double nota;
-    String ra;
-    
-    public void visualizarNota(){
-              double notaA1 = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da A1"));
-             double notaA2 = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da A2"));
-             double notaA3 = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da A3"));
+    private int Ra;
+    private String telefone;
+   private String tipoUsuario;
+   
+   
+   
 
-              double notaFinal = notaA1 + notaA2 + notaA3;   
-         JOptionPane.showMessageDialog(null, "A anota final do aluno "+ nomeAluno + notaFinal);   
+    @Override
+    public void identificarUsuario() {
+        super.identificarUsuario();
+        setTelefone(JOptionPane.showInputDialog("Digite o seu telefone"));
+        setRa(Integer.parseInt(JOptionPane.showInputDialog("Digite o seu Ra")));
         
+        
+         System.out.println("Bem vindo " + getTipoUsuario()+ " " + getNome());
+
+ 
+
+       
+   }
+
+    /**
+     * @return the nome
+     */
+  
+
+    /**
+     * @return the Ra
+     */
+    public int getRa() {
+        return Ra;
     }
+
+    /**
+     * @param Ra the Ra to set
+     */
+    public void setRa(int Ra) {
+        this.Ra = Ra;
+    }
+
     
-    public void gerarBoleto(){
+
+    /**
+     * @return the telefone
+     */
+    public String getTelefone() {
+        return telefone;
+    }
+
+    /**
+     * @param telefone the telefone to set
+     */
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    /**
+     * @return the tipoUsuario
+     */
+    public String getTipoUsuario() {
+        return tipoUsuario;
+    }
+
+    /**
+     * @param tipoUsuario the tipoUsuario to set
+     */
+    public void setTipoUsuario(String tipoUsuario) {
+        this.tipoUsuario = tipoUsuario;
+    }
+
+    /**
+     * @return the idade
+     */
+   
     
-}
+ 
+
+   
+   
     
+
 }
